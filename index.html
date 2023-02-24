@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        body {
+            padding: 5px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        label {
+            display: block;
+        }
+
+        label>div,
+        input {
+            float: left;
+            /* width: 90vw; */
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <h1>Data-Binding in vanilla JavaScript</h1>
+        <label for="firstName">
+            <div>First Name:</div>
+            <input type="text" data-bind="first" id="firstName" />
+        </label><br />
+        <label for="lastName">
+            <div>Last Name:</div>
+            <input type="text" data-bind="last" id="lastName" />
+        </label><br />
+        <label for="fullName">
+            <div>Full Name:</div>
+            <input type="text" data-bind="full" id="fullName" disabled />
+        </label>
+    </div>
+    <script src="observable.js"></script>
+</body>
+
+</html>
